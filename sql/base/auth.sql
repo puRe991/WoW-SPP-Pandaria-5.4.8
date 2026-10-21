@@ -66,8 +66,6 @@ CREATE TABLE `account`  (
 -- ----------------------------
 -- Records of account
 -- ----------------------------
-INSERT INTO `account` (`id`, `username`, `battlenet_account`, `sha_pass_hash`, `sessionkey`, `v`, `s`, `token_key`, `totp_secret`, `email`, `reg_mail`, `joindate`, `last_ip`, `failed_logins`, `locked`, `lock_country`, `last_login`, `online`, `expansion`, `mutetime`, `mutereason`, `muteby`, `locale`, `os`, `recruiter`, `project_member_id`, `rank`, `staff_id`, `vp`, `dp`, `isactive`, `activation`, `invited_by`, `inv_friend_acc`, `rewarded`, `flags`, `gmlevel`, `active_realm_id`, `online_mute_timer`, `active_mute_id`, `project_verified`, `cash`, `project_is_free`, `project_is_temp`, `project_unban_count`, `project_antierror`, `project_attached`, `project_passchange`, `project_vote_time`, `project_hwid`) 
-VALUES (1, 'TEST', '', '3D0D99423E31FCC67A6745EC89D70D700344BC76', 'A4BEAD4BBD62A0C1F5C1BA3CE857C7E587B1AFD1EBF2543F4EAFFC87EC09DE8EF51AA142D04ED259', '77733268AF0D167253BC9097A6BDDAA4E55B66EBFBC5432350DF549084F29D75', 'CC28EADCB56862623B8211A43B96F5FD1B8667464349816AE225487CC0425AB1', '', NULL, '', '', '2021-11-03 17:57:54', '25.90.193.232', 0, 0, '00', '2021-11-04 20:22:34', 0, 4, 0, '', '', 6, 'Win', 0, 0, NULL, NULL, NULL, 0, NULL, NULL, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, 0, 0, '');
 
 -- ----------------------------
 -- Table structure for account_access
@@ -84,7 +82,6 @@ CREATE TABLE `account_access`  (
 -- ----------------------------
 -- Records of account_access
 -- ----------------------------
-INSERT INTO `account_access` VALUES (1, 100, -1, NULL);
 
 -- ----------------------------
 -- Table structure for account_banned
@@ -2289,7 +2286,7 @@ CREATE TABLE `realmlist` (
 -- Records of realmlist
 -- ----------------------------
 INSERT INTO `realmlist` (`id`, `name`, `address`, `port`, `localAddress`, `localSubnetMask`, `icon`, `flag`, `timezone`, `allowedSecurityLevel`, `population`, `gamebuild`) VALUES 
-(1, 'MoP', '25.81.18.30', 8085, '127.0.0.1', '255.255.255.0', 0, 0, 14, 0, 0, 18414);
+(1, 'MoP', '127.0.0.1', 8085, '127.0.0.1', '255.255.255.0', 0, 0, 14, 0, 0, 18414);
 
 
 -- ----------------------------
@@ -2432,18 +2429,6 @@ CREATE TABLE `uptime`  (
 -- ----------------------------
 -- Records of uptime
 -- ----------------------------
-INSERT INTO `uptime` VALUES (1, 1635979141, 600, 0, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1635980112, 0, 0, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636049637, 601, 0, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636050723, 1200, 0, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636057343, 4202, 0, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636067032, 603, 1, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636067868, 3000, 1, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636071143, 600, 1, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636072221, 601, 1, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636073025, 1200, 1, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636074441, 3600, 1, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
-INSERT INTO `uptime` VALUES (1, 1636138018, 1203, 0, 'SkyFire 5.x.xRev: 0 Release Hash: Archive (Win64, little-endian)');
 
 -- ----------------------------
 -- Table structure for wow_token

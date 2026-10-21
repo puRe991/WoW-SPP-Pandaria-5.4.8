@@ -317,7 +317,7 @@ bool DBUpdater<T>::Populate(DatabaseWorkerPool<T>& pool)
                 std::string const filename = base.filename().generic_string();
                 std::string const workdir = boost::filesystem::current_path().generic_string();
                 TC_LOG_ERROR("sql.updates", ">> File \"{}\" is missing, download it from \"https://github.com/Legends-of-Azeroth/Legends-of-Azeroth-Pandaria-5.4.8/releases\"" \
-                    " uncompress it and place the file \"%s\" in the directory \"%s\".", filename.c_str(), filename.c_str(), workdir.c_str());
+                    " uncompress it and place the file \"{}\" in the directory \"{}\".", filename.c_str(), filename.c_str(), workdir.c_str());
                 break;
             }
         }

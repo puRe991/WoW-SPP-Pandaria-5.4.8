@@ -2809,9 +2809,9 @@ public:
         else
         {
             if (QueryResult charResult = CharacterDatabase.PQuery("SELECT account FROM characters WHERE guid = {}", guid.GetCounter()))
-                LoginDatabase.PExecute("DELETE FROM account_data WHERE accountId = {}", (*charResult)[0].GetUInt32());
+                CharacterDatabase.PExecute("DELETE FROM account_data WHERE accountId = {}", (*charResult)[0].GetUInt32());
 
-            LoginDatabase.PExecute("DELETE FROM character_account_data WHERE guid = {}", guid.GetCounter());
+            CharacterDatabase.PExecute("DELETE FROM character_account_data WHERE guid = {}", guid.GetCounter());
 
             handler->PSendSysMessage("Cache for player %s (guid: %u) removed.", name.c_str(), guid.GetCounter());
         }
